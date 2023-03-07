@@ -1,0 +1,517 @@
+/*
+File: This is style for site 
+Theme Name: Theme of synthwave
+Theme URI: synthwave.test/themesynthwave
+Text Domain: Theme of synthwave style
+Version: 0.1 alpha
+Requires at least: 5.3
+Requires PHP: 7.4
+Description: Test projects
+Tags: Blue, white, responsive, one-column, two-columns, features-images, custom-menu, custom-header, custom-footer, post-formats
+Author: Valentina Chernomorets
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned
+with others.
+*/
+/*-------------------------------------CUSTOM COLOR----------------------------------------*/
+:root {
+    /* Font of site */
+      font-family: 'Play', sans-serif;
+      
+    /* Colors */
+      --sl-color-text: #2F3A8F;
+      --sl-color-black: #141E27; 
+      --sl-color-white: white;
+      --sl-color-beige: #FBD6D2;
+      --sl-color-peach: #F190B7;
+      --sl-color-pink: #CE49BF;
+      --sl-color-purple: #A63EC5;
+      --sl-color-blue-navy: #2F3A8F;
+      --sl-color-blue-violet:#8A2BE2;
+      --sl-color-blue-dark-slate: #483D8B;
+  }
+
+/* -----------------------------------Breackpoints for adaptivite devices-------------------------------------------------*/
+/* ---------------------Aphone SE---------------------------- */
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 667px) { 
+  /* NavBar */
+  .toggle-nav {
+    display: inline-block !important;
+    float: right;
+    margin: 25px;
+    font-size: 2em;
+    transition: color linear 0.15s;
+  }
+  .burger-menu a.toggle-nav:link, 
+  .burger-menu a.toggle-nav:visited,
+  .burger-menu a.toggle-nav:hover, 
+  .burger-menu a.toggle-nav:active {
+    text-decoration: none;
+    color: var(--sl-color-white);
+  }
+  #nav-bar-synthwave {
+    display: inline-block;
+    position: relative;
+    background: var(--sl-color-blue-dark-slate);
+    text-align: left;
+  }
+  #nav-bar-synthwave ul {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    padding-right: 15px;
+    background: var(--sl-color-blue-dark-slate);
+    padding-left: 50%;
+  }
+  #nav-bar-synthwave ul li {
+    float: none;
+    display: block;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    min-width: 165px;
+    background: var(--sl-color-blue-dark-slate);
+    text-align: left;
+    width: 50%;
+  }
+  #nav-bar-synthwave ul ul {
+    top: 10px !important;
+    right: -120px;
+  }
+  #nav-bar-synthwave li:after { 
+    content: none; 
+  }
+  #nav-bar-synthwave #menu-synthwave {
+    width: 100%;
+    padding-bottom: 5%;
+    padding-left: 40%;
+  }
+  #nav-bar-synthwave li {
+    display: block !important;
+    padding: 10px !important;
+  }
+  #nav-bar-synthwave #menu-synthwave {
+    float: left !important;
+  }
+  #nav-bar-synthwave ul {
+    top: 85px !important;
+  }
+  #nav-bar-synthwave ul ul {
+    opacity: unset !important;
+    padding: 1px !important;
+    box-shadow: 0px 3px 3px !important;
+  }
+
+  /* Footer */
+  .main-footer .contacts {
+    display: none !important;
+  }
+  .main-footer .contacts-email {
+    display: none !important;
+  }
+
+  /* General style */
+  .content-style {
+    padding-top: 250px !important;
+  }
+  .content-style header {
+    text-align: center !important;
+  }
+
+  /* Contacts page */
+  .contact-us #content {
+    padding-left: unset !important;
+  }
+}
+
+/* ------------------------------------Samsung galaxyS8----------------------- */
+@media only screen 
+    and (device-width : 360px) 
+    and (device-height : 740px) {
+  /* NavBar */
+  .toggle-nav {
+    display: inline-block !important;
+    float: right;
+    margin: 25px;
+    font-size: 2em;
+    transition: color linear 0.15s;
+  }
+  .burger-menu a.toggle-nav:link, 
+  .burger-menu a.toggle-nav:visited,
+  .burger-menu a.toggle-nav:hover, 
+  .burger-menu a.toggle-nav:active {
+    text-decoration: none;
+    color: var(--sl-color-white);
+  }
+  #nav-bar-synthwave {
+    display: inline-block;
+    position: relative;
+    background: var(--sl-color-blue-dark-slate);
+    text-align: left;
+  }
+  #nav-bar-synthwave ul {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    padding-right: 15px;
+    background: var(--sl-color-blue-dark-slate);
+    padding-left: 50%;
+  }
+  #nav-bar-synthwave ul li {
+    float: none;
+    display: block;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    min-width: 165px;
+    background: var(--sl-color-blue-dark-slate);
+    text-align: left;
+    width: 50%;
+  }
+  #nav-bar-synthwave ul ul {
+    top: 10px !important;
+    right: -120px;
+  }
+  #nav-bar-synthwave li:after { 
+    content: none; 
+  }
+  #nav-bar-synthwave #menu-synthwave {
+    width: 100%;
+    padding-bottom: 5%;
+    padding-left: 40%;
+  }
+  #nav-bar-synthwave li {
+    display: block !important;
+    padding: 10px !important;
+  }
+  #nav-bar-synthwave #menu-synthwave {
+    float: left !important;
+  }
+  #nav-bar-synthwave ul {
+    top: 85px !important;
+  }
+  #nav-bar-synthwave ul ul {
+    opacity: unset !important;
+    padding: 1px !important;
+    box-shadow: 0px 3px 3px !important;
+  }
+
+  /* Footer */
+  .main-footer {
+    padding-top: 118px !important;
+    padding-bottom: 118px !important;
+  }
+  .main-footer .contacts {
+    display: none !important;
+  }
+  .main-footer .contacts-email {
+    display: none !important;
+  }
+
+  /* General style */
+  .content-style {
+    padding-top: 250px !important;
+  }
+  .content-style header {
+    text-align: center !important;
+  }
+
+  /* Contacts page */
+  .contact-us #content {
+    padding-left: unset !important;
+  }
+}
+
+/* -------------------------------Ipad Air------------------------------- */
+@media only screen 
+    and (device-width : 820px) 
+    and (device-height : 1180px) { 
+  /* NavBar */
+  .toggle-nav {
+    display: inline-block !important;
+    float: right;
+    margin: 25px;
+    font-size: 2em;
+    transition: color linear 0.15s;
+  }
+  .burger-menu a.toggle-nav:link, 
+  .burger-menu a.toggle-nav:visited,
+  .burger-menu a.toggle-nav:hover, 
+  .burger-menu a.toggle-nav:active {
+    text-decoration: none;
+    color: var(--sl-color-white);
+  }
+  #nav-bar-synthwave {
+    display: inline-block;
+    position: relative;
+    background: var(--sl-color-blue-dark-slate);
+    text-align: left;
+  }
+  #nav-bar-synthwave ul {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    padding-right: 15px;
+    background: var(--sl-color-blue-dark-slate);
+    padding-left: 50%;
+  }
+  #nav-bar-synthwave ul li {
+    float: none;
+    display: block;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    min-width: 165px;
+    background: var(--sl-color-blue-dark-slate);
+    text-align: left;
+    width: 50%;
+  }
+  #nav-bar-synthwave ul ul {
+    top: 5px !important;
+    right: -10px;
+  }
+  #nav-bar-synthwave li:after { 
+    content: none; 
+  }
+  #nav-bar-synthwave #menu-synthwave {
+    width: 100%;
+    padding-bottom: 5%;
+    padding-left: 40%;
+  }
+  #nav-bar-synthwave li {
+    display: block !important;
+    padding: 10px !important;
+  }
+  #nav-bar-synthwave #menu-synthwave {
+    float: left !important;
+  }
+  #nav-bar-synthwave ul {
+    top: 85px !important;
+  }
+  #nav-bar-synthwave ul ul {
+    opacity: unset !important;
+    padding: 1px !important;
+    box-shadow: 0px 3px 3px !important;
+  }
+
+  /* Footer */
+  .main-footer .contacts {
+    display: none !important;
+  }
+  .main-footer .contacts-email {
+    display: none !important;
+  }
+  .main-footer {
+    padding-top: 110px !important;
+    padding-bottom: 80px !important;
+  }
+  /* General style */
+  .content-style {
+    padding-top: 250px !important;
+  }
+  .content-style header {
+    text-align: center !important;
+  }
+
+  /* Contacts page */
+  .contact-us #content {
+    padding-left: unset !important;
+  }
+}
+
+/* ---------------------------------------------------------------------Responsive style------------------------------------------------- */
+/* -------------Small------------- */
+@media only screen and (min-width: 400px) {
+    /* NavBar */
+    #nav-bar-synthwave li {
+      display: block;
+      padding: 10px;
+    }
+    #nav-bar-synthwave #menu-synthwave {
+      float: left;
+    }
+    #nav-bar-synthwave ul {
+      top: 140px;
+    }
+    #nav-bar-synthwave ul ul {
+      opacity: unset;
+      padding: 1px;
+      box-shadow: 0px 3px 3px
+    }
+  
+    /* Footer */
+    .main-footer .contacts {
+      display: none;
+    }
+    .main-footer .contacts-email {
+      display: none;
+    }
+  
+    /* General style */
+    .content-style {
+      padding-top: 250px;
+    }
+    .content-style header {
+      text-align: center;
+    }
+  
+    /* Contacts page */
+    .contact-us #content {
+      padding-left: unset;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) and (min-width: 768px) { 
+    #nav-bar-synthwave ul {
+      top: 90px;
+    }
+  }
+  
+  /* Medium */
+  @media only screen and (min-width: 768px) { 
+  /* NavBar */
+    .navbar-brand {
+      display: block;
+    }
+    #nav-bar-synthwave li {
+      display: inline-block;
+    }
+    #nav-bar-synthwave #menu-synthwave {
+      float: right;
+    }
+    #nav-bar-synthwave ul {
+      top: 90px;
+    }
+    #nav-bar-synthwave ul ul {
+      background-color: var(--sl-color-blue-dark-slate);
+    }
+  
+    /* Footer */
+    .main-footer .contacts {
+      display: unset;
+    }
+    .main-footer .contacts-email {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    /* General style */
+    .content-style {
+      padding-top: 250px;
+    }
+    .content-style header {
+      text-align: center;
+    }
+  
+    /* Contacts page */
+    .contact-us #content {
+      padding-left: unset;
+    }
+  }
+  
+  @media screen and (max-width: 768px ) {
+    #nav-bar-synthwave ul {
+      top: 90px;
+    }
+  }
+  
+  @media screen and (max-width: 880px ) {
+    .toggle-nav {
+      display: inline-block !important;
+      float: right;
+      margin: 25px;
+      font-size: 2em;
+      transition: color linear 0.15s;
+    }
+    .burger-menu a.toggle-nav:link, 
+    .burger-menu a.toggle-nav:visited,
+    .burger-menu a.toggle-nav:hover, 
+    .burger-menu a.toggle-nav:active {
+      text-decoration: none;
+      color: var(--sl-color-white);
+    }
+    #nav-bar-synthwave {
+      display: inline-block;
+      position: relative;
+      background: var(--sl-color-blue-dark-slate);
+      text-align: left;
+    }
+    #nav-bar-synthwave ul {
+      display: none;
+      position: absolute;
+      z-index: 999;
+      padding-right: 15px;
+      background: var(--sl-color-blue-dark-slate);
+      padding-left: 50%;
+    }
+    #nav-bar-synthwave ul li {
+      float: none;
+      display: block;
+      position: relative;
+      top: 0px;
+      right: 0px;
+      min-width: 165px;
+      background: var(--sl-color-blue-dark-slate);
+      text-align: left;
+      width: 50%;
+    }
+    #nav-bar-synthwave ul ul {
+      top: 10px;
+      right: -120px;
+    }
+    #nav-bar-synthwave li:after { 
+      content: none; 
+    }
+    #nav-bar-synthwave #menu-synthwave {
+      width: 100%;
+      padding-bottom: 5%;
+      padding-left: 40%;
+    }
+  }
+  
+  /* -----------------Large----------------- */
+  @media only screen and (min-width: 992px) {
+    /* NavBar */
+    .navbar-brand {
+      display: block;
+    }
+    #nav-bar-synthwave li {
+      display: inline-block;
+    }
+    #nav-bar-synthwave #menu-synthwave {
+      float: right;
+      padding-left: unset;
+      display: unset !important;
+    }
+    #nav-bar-synthwave ul ul {
+      background-color: var(--sl-color-blue-dark-slate);
+    }
+    #nav-bar-synthwave ul .dropdown-menu {
+      display: block !important;
+    }
+  
+    /* Footer */
+    .main-footer .contacts {
+      display: unset;
+    }
+    .main-footer .contacts-email {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    /* General style */
+    .content-style {
+      padding-top: 200px;
+    }
+    .content-style header {
+      text-align: unset;
+    }
+  
+    /* Contacts page */
+    .contact-us #content {
+      padding-left: 25%;
+    }
+  }

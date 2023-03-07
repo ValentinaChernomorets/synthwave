@@ -1,0 +1,241 @@
+/*
+File: This is style for site
+Theme Name: Theme of synthwave
+Theme URI: synthwave.test/themesynthwave
+Text Domain: Theme of synthwave style
+Version: 0.1 alpha
+Requires at least: 5.3
+Requires PHP: 7.4
+Description: Test projects
+Tags: Blue, white, responsive, one-column, two-columns, features-images, custom-menu, custom-header, custom-footer, post-formats
+Author: Valentina Chernomorets
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned
+with others.
+*/
+/*-------------------------------------CUSTOM COLOR----------------------------------------*/
+:root {
+  /* Font of site */
+    font-family: 'Play', sans-serif;
+    
+  /* Colors */
+    --sl-color-text: #2F3A8F;
+    --sl-color-black: #141E27; 
+    --sl-color-white: white;
+    --sl-color-beige: #FBD6D2;
+    --sl-color-peach: #F190B7;
+    --sl-color-pink: #CE49BF;
+    --sl-color-purple: #A63EC5;
+    --sl-color-blue-navy: #2F3A8F;
+    --sl-color-blue-violet:#8A2BE2;
+    --sl-color-blue-dark-slate: #483D8B;
+}
+
+/* --------------------------------Style for BODY site------------------------------- */
+.sunthwave-body {
+  margin: 0;
+}
+.sunthwave-body ul {
+  list-style: none;
+}
+.sunthwave-body li {
+  text-decoration: none;
+}
+.sunthwave-body a {
+  color: var(--sl-color-white);
+  text-decoration: none;
+}
+.sunthwave-body .entry-header small {
+  display: none;
+}
+
+/* -------------------------Style for ALL site------------------------------- */
+.sunthwave-body a:hover{
+  color: var(--sl-color-blue-violet);
+}
+
+/* -----------------------Style for GENERAL class-------------------------------------- */
+.background-style {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content-style {
+  width: 70%;
+  margin: 0 auto;
+  color: var(--sl-color-white);
+  padding-top: 200px;
+  padding-bottom: 70px;
+}
+
+/* ------------------------------------------Style for FROM page------------------------------------------ */
+div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
+  width: 60%;
+}
+
+/*-----------------------------------Style for NavBar------------------------------*/
+.burger-menu .toggle-nav {
+  display: none;
+}
+
+#nav-bar-synthwave {
+  position: absolute;
+  z-index: 2000;
+  width: 100%;
+  background: var(--sl-color-blue-dark-slate);
+}
+#nav-bar-synthwave .navbar-brand {
+  padding-left: 50px;
+  padding-top: 30px;
+}
+#nav-bar-synthwave li {
+  display: inline-block;
+  text-transform: uppercase;
+}
+#nav-bar-synthwave .dropdown-menu li {
+  display: block;
+}
+#nav-bar-synthwave li a { 
+  color: var(--sl-color-white) !important;
+  padding: 15px 45px 15px 0;
+}
+#nav-bar-synthwave li a:hover {
+  color: var(--sl-color-purple) !important;
+}
+#nav-bar-synthwave .navbar-toggler a {
+  font-size: 48px;
+  color: var(--sl-color-white) !important;
+}
+#nav-bar-synthwave .navbar-toggler a:hover {
+  color: var(--sl-color-blue-violet) !important;
+}
+#nav-bar-synthwave .navbar-brand {
+  float: left;
+}
+#nav-bar-synthwave #menu-synthwave {
+  float: right;
+  padding-top: 45px;
+}
+#nav-bar-synthwave .clear {
+  clear: both;
+}
+#nav-bar-synthwave ul ul {
+  visibility: hidden;
+  position: absolute;
+  padding: 0px;
+  z-index: 300;
+  padding: 10px;
+  box-shadow: 0px 3px 3px var(--sl-color-black);
+}
+#nav-bar-synthwave ul li:hover > ul {
+  visibility: visible;
+}
+
+/* --------------------------------------------------------Style for HOME page-------------------------------- */
+/* PARALAX */
+.home-page .parallax { 
+  background-image: url('../images/background-parallax.jpg');
+}
+
+/* -----------------------------------------------------Style for MUSIC page--------------------------------------- */
+.page-music figure {
+  text-align: center;
+}
+.page-music #content .parallax{
+  background-image: url('../images/retro-synthwave-music.jpg');
+}
+
+/* -----------------------------------------------Style for MUSIC ALBUMS page---------------------------------- */
+.page-music-albums {
+  background-image: url('../images/music-album.jpg');
+}
+.page-music-albums figure img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+}
+.page-music-albums .wp-block-image .wp-element-caption {
+  text-align: center;
+}
+
+/*-----------------------------------------------Style for RETRO NEWS page----------------------------------------------------- */
+.retro-news {
+  background-image: url('../images/retro-news.jpg');
+}
+
+/* -----------------------------------------------Style for DESIGN page-------------------------------------------------------- */
+.page-design {
+  background-image: url('../images/background-design.jpg');
+}
+.page-design .swiper-wrapper {
+  height: 50%;
+}
+
+/* -----------------------------------------------------Style for CONTACT page--------------------------------------------------------- */
+.contact {
+  background-image: url('../images/contact_retro-synthwave.jpg');
+}
+
+/* --------------------------------------------------Style for CONTACT US page-------------------------------------------------- */
+.contact-us {
+  background-image: url('../images/contact_retro-synthwave.jpg');
+}
+.contact-us #content {
+  padding-left: 25%;
+}
+.contact-us .wpforms-submit-container {
+  color: var(--sl-color-blue-navy);
+}
+.contact-us .wpforms-submit-container:hover {
+  color: var(--sl-color-blue-violet);
+}
+
+/* -----------------------------------------------Style for FILMS page-----------------------------------------------------------*/
+.retro-films {
+  background-image: url('../images/background-films.jpg');
+}
+
+/* --------------------------------------------------Style for FOOTER-----------------------------------------------------------*/
+.main-footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--sl-color-blue-dark-slate);
+  padding-top: 50px;
+  padding-bottom: 35px;
+}
+.main-footer .footer ul li {
+  padding-top: 10px;
+}
+.main-footer .footer ul li a:hover {
+  color: var(--sl-color-blue-violet);
+}
+.main-footer .contacts .social-widget a {
+  padding: 5px;
+}
+.main-footer ul li a {
+  text-transform: uppercase;
+}
+.main-footer ul li a:hover {
+  color: var(--sl-color-blue-viole);
+} 
+.contacts .social-widget a {
+  opacity: 0.5;
+}
+.contacts .social-widget a:hover {
+  opacity: 1;
+}
+.contacts-email {
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+}
+.contacts-email .post-title {
+  color: var(--sl-color-purple);
+}
+.contacts-email .post-title a:hover {
+  color: var(--sl-color-purple);
+}
